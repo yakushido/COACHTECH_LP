@@ -1,0 +1,325 @@
+body {
+  min-width: 1000px;
+  max-width: 1500px;
+}
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerTtl {
+  display: flex;
+  align-items: center;
+}
+.headerTtl > img {
+  height: 80%;
+}
+.headerList {
+  list-style: none;
+  display: flex;
+  font-size: 15px;
+  align-items: end;
+}
+.headerList * {
+  text-decoration: none;
+  padding: 0 15px 5px 0;
+  color: rgb(100, 100, 100);
+}
+
+.top {
+  position: relative;
+  margin-top: 10px;
+}
+.topTtl {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.topImg > img {
+  width: 60%;
+  display: block;
+  margin: 0 0 0 auto;
+}
+.topTtl > p:not(:last-child) {
+  color: rgb(200, 0, 100);
+}
+.topTtl > p:nth-child(1) {
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 9vh;
+}
+.topTtl > p:nth-child(2) {
+  font-size: 1.5vw;
+  margin-top: 6vh;
+  font-weight: bold;
+}
+.topTtl > p:nth-child(3) {
+  color: rgb(100, 100, 100);
+  font-size: 1vw;
+  line-height: 3vh;
+  margin-top: 1vh;
+}
+.topTtl > p span {
+  color: rgb(0, 250, 100);
+}
+
+.news {
+  margin: 50px auto;
+  width: 70%;
+}
+.ttl {
+  color: rgb(200, 0, 100);
+  font-size: 16px;
+}
+.subTtl {
+  color: rgb(100, 100, 100);
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.newsMain > p {
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+.newsMain > p span {
+  background-color: rgb(200, 0, 100);
+  padding: 0 15px;
+  margin: 0 30px;
+  color: white;
+  border-radius: 15px;
+}
+.newsAtc {
+  border-top: 2px solid rgb(100, 100, 100);
+  border-bottom: 2px solid rgb(100, 100, 100);
+  padding-bottom: 30px;
+}
+
+.about {
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: rgb(200, 0, 100, 0.05);
+  width: 100%;
+}
+.about > h2 {
+  text-align: center;
+}
+.aboutMain * {
+  width: 35%;
+}
+.aboutMain {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutMain > p {
+  color: rgb(100, 100, 100);
+  line-height: 4vh;
+  font-size: 1.5vw;
+}
+
+.service {
+  width: 90%;
+  margin: 30px auto;
+}
+.serviceMain {
+  display: grid;
+  height: 50vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.serviceGrid > img {
+  margin: 10px;
+}
+.serviceGrid:nth-child(1) > p > img {
+  width: 40%;
+  height: 40%;
+  margin: 10px;
+}
+.serviceGrid:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(200, 0, 100);
+}
+.serviceGrid:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(200, 0, 100, 0.2);
+  display: flex;
+}
+.serviceGrid:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: rgb(200, 0, 100, 0.4);
+  display: flex;
+}
+.serviceGrid > div {
+  color: white;
+}
+.serviceGrid:nth-child(1) > p,
+.serviceGrid:nth-child(1) > div > p:first-child {
+  text-align: center;
+}
+.serviceGrid > div > p:last-child {
+  margin-top: 2vh;
+  line-height: 4vh;
+  font-size: 1vw;
+}
+.serviceGrid > div > p:first-child {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.serviceGrid:not(:first-child) > div > p:first-child {
+  margin-top: 4vh;
+}
+.serviceGrid:nth-child(1) > div > p:last-child {
+  padding: 0 4vw;
+}
+
+.blog {
+  padding: 30px;
+  background-color: rgb(200, 0, 100, 0.05);
+}
+.blog > h2 {
+  padding-left: 4vw;
+}
+.blogCard {
+  width: 25%;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 15px;
+}
+.blogImg {
+  position: relative;
+}
+.blogImg > p:first-child {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: rgb(200, 0, 100);
+  color: white;
+  font-size: 1vw;
+  border-radius: 15px 0 0 0;
+}
+.blogImg > p:last-child > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.blogCard > p {
+  margin: 20px;
+  color: rgb(50, 50, 50);
+  font-size: 1.3vw;
+  line-height: 3vh;
+}
+.blogCard > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  color: rgb(100, 100, 100);
+  font-size: 1.3vw;
+}
+.blogCardParent {
+  display: flex;
+  justify-content: space-around;
+}
+.blog > p {
+  text-align: center;
+  margin-top: 30px;
+}
+.blog > p > a {
+  padding: 10px 30px;
+  border: 2px solid rgb(200, 0, 100);
+  border-radius: 30px;
+  text-decoration: none;
+  color: rgb(200, 0, 100);
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+.company {
+  margin: 30px auto;
+  width: 60%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr,
+table td {
+  border: 1px solid black;
+  font-size: 1.5vw;
+  line-height: 7vh;
+  padding-left: 10px;
+  color: rgb(100, 100, 100);
+}
+table tr td:nth-child(2n-1) {
+  background-color: rgb(200, 0, 100, 0.05);
+  font-weight: bold;
+}
+.footerImg > div > p > img {
+  width: 100%;
+}
+.footerImg {
+  display: flex;
+}
+.footerImg > div {
+  position: relative;
+}
+.footerImg > div > p:first-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.mail > p {
+  text-align: center;
+}
+.mail > p:first-child {
+  margin-top: 30px;
+  color: rgb(100, 100, 100);
+  font-display: 1.5vw;
+  font-weight: bold;
+}
+.mail > p:last-child {
+  margin: 30px auto;
+}
+.mail > p > a {
+  text-decoration: none;
+  background-color: rgb(200, 0, 100);
+  padding: 20px 80px;
+  border-radius: 50px;
+  border-bottom: 10px solid rgb(66, 28, 47);
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+.mail > p > a:before {
+  content: "";
+  position: absolute;
+  background: url(../img/LPサイト制作/mailicon.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  top: 50%;
+  transform: translate(-200%, -50%);
+}
+.mail > p:last-child:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background-color: rgb(200, 0, 100);
+  margin: 0 auto 50px;
+}
+footer > p {
+  background-color: rgb(200, 0, 100, 0.05);
+  color: rgb(100, 100, 100);
+  font-size: 1vw;
+  text-align: center;
+  margin: 80px 0 30px;
+  padding: 20px 0;
+}
